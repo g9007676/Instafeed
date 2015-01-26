@@ -6,6 +6,16 @@
     <link href="assets/css/bootstrap.css" rel=stylesheet type="text/css">
     <link href="assets/css/bootstrap-theme.min.css" rel=stylesheet type="text/css">
     <script type="text/javascript" src="assets/js/instafeed.min.js"></script>
+
+<script type="text/javascript">
+var feed = new Instafeed({
+    get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'd8354916c91f43e2badf7b318b115085'
+});
+feed.run();
+</script>
+
 </head>
 <body>
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -25,18 +35,7 @@
     </div>
 </div>
 <div class="container">
-    <div class="row">
-        <div class="col-sm-6 col-md-4">
-
-            <div class="thumbnail">
-                <img src="..." alt="...">
-                <div class="caption">
-                    <p>...</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
+<div id="instafeed"></div>
 </div>
 </body>
 <html>
