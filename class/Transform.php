@@ -37,7 +37,9 @@ class Transform
             $ret = array();
 
             $ret['created_time'] = $val['created_time'];
-            $ret['local'] = $val['location']['name'];
+            if (!empty($val['location']['name'])) {
+                $ret['local'] = $val['location']['name'];
+            }
             $ret['text'] = $val['caption']['text'];
             $ret['link'] = $val['link'];
             $ret['like'] = $val['likes']['count']; 
